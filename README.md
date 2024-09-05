@@ -1,3 +1,7 @@
+[![NuGet](https://img.shields.io/nuget/v/CardBlitz)](https://www.nuget.org/packages/CardBlitz)
+[![License](https://img.shields.io/github/license/yourusername/card-blitz)](LICENSE)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/yourusername/card-blitz/build.yml)](https://github.com/yourusername/card-blitz/actions)
+
 # 🎴 Card Blitz
 
 **Card Blitz** is a powerful NuGet package designed to simplify access to **Yu-Gi-Oh! card data** from multiple sources. Whether you’re developing a dueling app, a card management tool, or a fan site, Card Blitz is your go-to solution for fast and accurate card information.
