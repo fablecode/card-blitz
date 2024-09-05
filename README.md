@@ -44,11 +44,10 @@ Console.WriteLine($"Card Name: {cardData.Name}");
 We welcome contributions! To contribute:
 
 Fork the repository.
-Create a feature branch (git checkout -b feature-name).
-Commit your changes (git commit -am 'Add new feature').
-Push to the branch (git push origin feature-name).
-Create a new Pull Request.
-Please refer to our CONTRIBUTING.md for more details.
+- Create a feature branch (`git checkout -b feature-name`).
+- Commit your changes (`git commit -am 'Add new feature'`).
+- Push to the branch (`git push origin feature-name`).
+- Create a new Pull Request.
 
 ## 📄 License
 This project is licensed under the MIT License. See the LICENSE file for details.
