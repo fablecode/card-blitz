@@ -25,7 +25,6 @@ Install-Package CardBlitz
 Here's how to start using Card Blitz to fetch card data:
 1. Initialize the service
 ```csharp
-Copy code
 using CardBlitz;
 
 var cardService = new YugiohCardService(new List<ICardDataSource>
@@ -36,7 +35,6 @@ var cardService = new YugiohCardService(new List<ICardDataSource>
 ```
 2. Fetch card data by card number
 ```csharp
-Copy code
 var cardData = cardService.GetCardData("12345");
 Console.WriteLine($"Card Name: {cardData.Name}");
 ```
