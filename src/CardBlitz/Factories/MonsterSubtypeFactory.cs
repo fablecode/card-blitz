@@ -1,5 +1,6 @@
 ﻿using System.Collections.Immutable;
 using CardBlitz.Constants;
+using CardBlitz.Core;
 using CardBlitz.Models;
 
 namespace CardBlitz.Factories;

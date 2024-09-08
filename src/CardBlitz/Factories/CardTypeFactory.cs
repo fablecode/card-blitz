@@ -1,4 +1,5 @@
 ﻿using CardBlitz.Constants;
+using CardBlitz.Core;
 using CardBlitz.Models;
 
 namespace CardBlitz.Factories;
@@ -22,7 +23,9 @@ public static class CardTypeFactory
                     monsterSubtypes
                 );
             case CardType.Spell:
+                return new SpellCard(yugiohWebPageCard.Name, SpellTypeFactory.CreateSpellType(yugiohWebPageCard.CardType));
             case CardType.Trap:
+                return new TrapCard(yugiohWebPageCard.Name, TrapTypeFactory.CreateTrapType(yugiohWebPageCard.CardType));
             default:
                 throw new ArgumentOutOfRangeException(nameof(yugiohWebPageCard.CardType));
         }
