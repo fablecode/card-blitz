@@ -1,5 +1,4 @@
 ﻿using CardBlitz.Models;
-using CardBlitz.WebPages.Cards;
 using HtmlAgilityPack;
 
 namespace CardBlitz.WebPages;

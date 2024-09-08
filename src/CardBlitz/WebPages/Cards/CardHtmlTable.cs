@@ -32,7 +32,7 @@ public class CardHtmlTable : ICardHtmlTable
 
         var value = string.Empty;
 
-        if (cardTable == null || string.IsNullOrWhiteSpace(key))
+        if (string.IsNullOrWhiteSpace(key))
             return value;
 
         var isKeyFound = cardTable.TryGetValue(key, out value);
@@ -49,7 +49,7 @@ public class CardHtmlTable : ICardHtmlTable
     {
         var cardTable = new Dictionary<string, string>();
 
-        var htmlTableRows = htmlTable?.SelectNodes("./tbody/tr");
+        var htmlTableRows = htmlTable.SelectNodes("./tbody/tr");
 
         if (htmlTableRows != null && htmlTableRows.Any())
         {

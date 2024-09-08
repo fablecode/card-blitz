@@ -29,7 +29,7 @@ public class CardHtmlDocument : ICardHtmlDocument
 
     public string Description(HtmlDocument htmlDocument)
     {
-        const string pattern = @"(?!</?br>)<.*?>";
+        const string pattern = "(?!</?br>)<.*?>";
         var descNode = htmlDocument.DocumentNode.SelectSingleNode("//b[text()[contains(., 'Card descriptions')]]/../table[1]/tbody/tr[1]/td[1]/table[1]/tbody/tr[3]/td")?.InnerHtml;
 
         if (descNode != null)
@@ -120,12 +120,24 @@ public class CardHtmlDocument : ICardHtmlDocument
 
     }
 
+    public static string ExtractMonsterEffect(string description)
+    {
+        // Define regex pattern to extract Monster Effect
+        string pattern = "Monster Effect:(.*)";
+
+        // Use regular expression to find the monster effect text
+        Match match = Regex.Match(description, pattern, RegexOptions.Singleline);
+
+        // Return the captured group (Monster Effect) or null if not found
+        return match.Success ? match.Groups[1].Value.Trim() : null;
+    }
+
     public string PendulumEffect(HtmlDocument htmlDocument)
     {
         var description = RemoveHtmlTags(Description(htmlDocument));
 
         // Define regex pattern to extract Pendulum Effect
-        string pattern = @"Pendulum Effect:(.*?)(?=Monster Effect|$)";
+        string pattern = "Pendulum Effect:(.*?)(?=Monster Effect|$)";
 
         // Use regular expression to find the pendulum effect text
         Match match = Regex.Match(description, pattern, RegexOptions.Singleline);
@@ -155,7 +167,7 @@ public class CardHtmlDocument : ICardHtmlDocument
     public static string RemoveHtmlTags(string input)
     {
         // Define regex pattern to match HTML tags (anything between < and >)
-        string pattern = @"<[^>]+>";
+        string pattern = "<[^>]+>";
 
         // Use Regex.Replace to remove all HTML tags
         string result = Regex.Replace(input, pattern, string.Empty);
