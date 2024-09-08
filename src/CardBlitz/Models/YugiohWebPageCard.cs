@@ -25,7 +25,7 @@ public sealed class YugiohWebPageCard
     {
         get
         {
-            return Types?.Split('/').Select(t => t.Trim()).ToArray();
+            return Types.Split('/').Select(t => t.Trim()).ToArray();
         }
     }
 
@@ -33,7 +33,7 @@ public sealed class YugiohWebPageCard
     {
         get
         {
-            return LinkArrows?.Split(',').Select(t => t.Trim()).ToList();
+            return LinkArrows.Split(',').Select(t => t.Trim()).ToList();
         }
     }
 }
