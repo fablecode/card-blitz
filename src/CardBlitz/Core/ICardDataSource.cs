@@ -1,6 +1,4 @@
-﻿using CardBlitz.Models;
-
-namespace CardBlitz.DataSources;
+﻿namespace CardBlitz.Core;
 
 public interface ICardDataSource
 {
