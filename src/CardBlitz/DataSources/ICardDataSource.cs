@@ -1,7 +1,9 @@
-﻿namespace CardBlitz.DataSources;
+﻿using CardBlitz.Models;
+
+namespace CardBlitz.DataSources;
 
 public interface ICardDataSource
 {
-    Card GetCardByName(string name);
-    Card GetCardByPasscode(long passcode);
+    ICard CardByName(string name);
+    ICard CardByPasscode(long passcode);
 }
