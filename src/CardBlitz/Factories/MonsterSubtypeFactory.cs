@@ -1,8 +1,8 @@
 ﻿using System.Collections.Immutable;
 using CardBlitz.Constants;
 using CardBlitz.Core;
-using CardBlitz.Models;
-using CardBlitz.Models.Monster;
+using CardBlitz.Domain;
+using CardBlitz.Domain.Monster;
 
 namespace CardBlitz.Factories;
 

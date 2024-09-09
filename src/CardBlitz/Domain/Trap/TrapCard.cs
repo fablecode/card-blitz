@@ -1,6 +1,6 @@
 ﻿using CardBlitz.Core;
 
-namespace CardBlitz.Models.Trap;
+namespace CardBlitz.Domain.Trap;
 
 public sealed class TrapCard(string name, TrapType type) : ICardType
 {

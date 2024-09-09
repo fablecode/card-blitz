@@ -1,6 +1,6 @@
 ﻿using CardBlitz.Core;
 
-namespace CardBlitz.Models;
+namespace CardBlitz.Domain;
 
 public sealed class Card(long id, ICardType cardType) : ICard
 {

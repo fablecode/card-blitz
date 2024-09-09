@@ -1,5 +1,5 @@
 ﻿using CardBlitz.Constants;
-using CardBlitz.Models.Monster;
+using CardBlitz.Domain.Monster;
 
 namespace CardBlitz.Factories;
 

@@ -1,4 +1,4 @@
-﻿namespace CardBlitz.Models;
+﻿namespace CardBlitz.Domain;
 
 public sealed class YugiohWebPageCard
 {

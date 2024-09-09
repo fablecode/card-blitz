@@ -1,6 +1,6 @@
 ﻿using CardBlitz.Core;
 
-namespace CardBlitz.Models.Spell;
+namespace CardBlitz.Domain.Spell;
 
 public sealed class SpellCard(string name, SpellType type) : ICardType
 {

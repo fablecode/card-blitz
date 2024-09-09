@@ -1,5 +1,5 @@
 ﻿using CardBlitz.Constants;
-using CardBlitz.Models.Trap;
+using CardBlitz.Domain.Trap;
 
 namespace CardBlitz.Factories;
 

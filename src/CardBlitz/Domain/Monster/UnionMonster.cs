@@ -1,7 +1,7 @@
 ﻿using CardBlitz.Constants;
 using CardBlitz.Core;
 
-namespace CardBlitz.Models.Monster;
+namespace CardBlitz.Domain.Monster;
 
 public sealed class UnionMonster : IMonsterSubtype
 {

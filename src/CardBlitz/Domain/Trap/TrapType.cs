@@ -1,3 +1,3 @@
-﻿namespace CardBlitz.Models.Trap;
+﻿namespace CardBlitz.Domain.Trap;
 
 public record TrapType(string Name);

@@ -1,3 +1,3 @@
-﻿namespace CardBlitz.Models.Spell;
+﻿namespace CardBlitz.Domain.Spell;
 
 public record SpellType(string Name);

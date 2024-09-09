@@ -1,5 +1,5 @@
 ﻿using CardBlitz.Constants;
-using CardBlitz.Models.Spell;
+using CardBlitz.Domain.Spell;
 
 namespace CardBlitz.Factories;
 

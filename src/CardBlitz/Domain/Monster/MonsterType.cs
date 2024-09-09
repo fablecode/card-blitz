@@ -1,3 +1,3 @@
-﻿namespace CardBlitz.Models.Monster;
+﻿namespace CardBlitz.Domain.Monster;
 
 public record MonsterType(string Name);
