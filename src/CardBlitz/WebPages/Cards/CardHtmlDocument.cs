@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using System.Net;
+using System.Text.RegularExpressions;
 using CardBlitz.Helpers;
 using HtmlAgilityPack;
 
@@ -118,32 +119,6 @@ public class CardHtmlDocument : ICardHtmlDocument
         var scale = ExtractHtmlCardTableValue(CardHtmlTable.PendulumScale, htmlDocument);
         return int.TryParse(scale, out var cardScale) ? cardScale : null;
 
-    }
-
-    public static string ExtractMonsterEffect(string description)
-    {
-        // Define regex pattern to extract Monster Effect
-        string pattern = "Monster Effect:(.*)";
-
-        // Use regular expression to find the monster effect text
-        Match match = Regex.Match(description, pattern, RegexOptions.Singleline);
-
-        // Return the captured group (Monster Effect) or null if not found
-        return match.Success ? match.Groups[1].Value.Trim() : null;
-    }
-
-    public string PendulumEffect(HtmlDocument htmlDocument)
-    {
-        var description = RemoveHtmlTags(Description(htmlDocument));
-
-        // Define regex pattern to extract Pendulum Effect
-        string pattern = "Pendulum Effect:(.*?)(?=Monster Effect|$)";
-
-        // Use regular expression to find the pendulum effect text
-        Match match = Regex.Match(description, pattern, RegexOptions.Singleline);
-
-        // Return the captured group (Pendulum Effect)
-        return match.Success ? match.Groups[1].Value.Trim() : string.Empty;
     }
 
     #region private helpers
