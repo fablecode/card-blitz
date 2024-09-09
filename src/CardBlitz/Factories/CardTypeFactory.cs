@@ -1,6 +1,9 @@
 ﻿using CardBlitz.Constants;
 using CardBlitz.Core;
 using CardBlitz.Models;
+using CardBlitz.Models.Monster;
+using CardBlitz.Models.Spell;
+using CardBlitz.Models.Trap;
 
 namespace CardBlitz.Factories;
 

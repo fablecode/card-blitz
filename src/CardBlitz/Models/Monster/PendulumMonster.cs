@@ -1,9 +1,8 @@
-﻿using CardBlitz.Constants;
+﻿using System.Text.RegularExpressions;
+using CardBlitz.Constants;
 using CardBlitz.Core;
-using HtmlAgilityPack;
-using System.Text.RegularExpressions;
 
-namespace CardBlitz.Models;
+namespace CardBlitz.Models.Monster;
 
 public sealed class PendulumMonster(int scale, string effect) : IMonsterSubtype
 {

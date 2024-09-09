@@ -1,7 +1,7 @@
 ﻿using CardBlitz.Constants;
 using CardBlitz.Core;
 
-namespace CardBlitz.Models;
+namespace CardBlitz.Models.Monster;
 
 public sealed class SpiritMonster : IMonsterSubtype
 {

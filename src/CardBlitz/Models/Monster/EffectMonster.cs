@@ -1,8 +1,8 @@
-﻿using CardBlitz.Constants;
+﻿using System.Text.RegularExpressions;
+using CardBlitz.Constants;
 using CardBlitz.Core;
-using System.Text.RegularExpressions;
 
-namespace CardBlitz.Models;
+namespace CardBlitz.Models.Monster;
 
 public sealed class EffectMonster(string effect) : IMonsterSubtype
 {

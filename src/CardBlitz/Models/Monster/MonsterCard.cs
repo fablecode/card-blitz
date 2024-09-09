@@ -1,8 +1,6 @@
-﻿using CardBlitz.Constants;
-using CardBlitz.Core;
-using CardBlitz.Models.Monster;
+﻿using CardBlitz.Core;
 
-namespace CardBlitz.Models;
+namespace CardBlitz.Models.Monster;
 
 public sealed class MonsterCard : ICardType
 {
