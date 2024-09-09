@@ -20,5 +20,4 @@ public interface ICardHtmlDocument
     string Materials(HtmlDocument htmlDocument);
     string CardEffectTypes(HtmlDocument htmlDocument);
     int? PendulumScale(HtmlDocument htmlDocument);
-    string PendulumEffect(HtmlDocument htmlDocument);
 }

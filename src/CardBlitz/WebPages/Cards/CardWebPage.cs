@@ -51,7 +51,6 @@ public class CardWebPage : ICardWebPage
             Materials = _cardHtmlDocument.Materials(htmlDocument),
             CardEffectTypes = _cardHtmlDocument.CardEffectTypes(htmlDocument),
             PendulumScale = _cardHtmlDocument.PendulumScale(htmlDocument),
-            PendulumEffect = _cardHtmlDocument.PendulumEffect(htmlDocument)
         };
 
         return yugiohCard;

@@ -9,7 +9,6 @@ public sealed class YugiohWebPageCard
     public int? Level { get; set; }
     public int? Rank { get; set; }
     public int? PendulumScale { get; set; }
-    public string PendulumEffect { get; set; }
     public string AtkDef { get; set; }
     public string AtkLink { get; set; }
     public string CardNumber { get; set; }
