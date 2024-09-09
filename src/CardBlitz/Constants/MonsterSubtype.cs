@@ -15,5 +15,5 @@ public static class MonsterSubtype
     public const string Spirit = "Spirit";
     public const string Flip = "Flip";
     public const string Toon = "Toon";
-    public const string Link = "link";
+    public const string Link = "Link";
 }
