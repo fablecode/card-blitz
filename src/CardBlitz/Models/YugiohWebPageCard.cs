@@ -28,11 +28,11 @@ public sealed class YugiohWebPageCard
         }
     }
 
-    public List<string> MonsterLinkArrows
+    public string[] MonsterLinkArrows
     {
         get
         {
-            return LinkArrows.Split(',').Select(t => t.Trim()).ToList();
+            return LinkArrows.Split(',').Select(t => t.Trim()).ToArray();
         }
     }
 }

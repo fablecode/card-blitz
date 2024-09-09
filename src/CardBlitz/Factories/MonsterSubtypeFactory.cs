@@ -31,10 +31,31 @@ public static class MonsterSubtypeFactory
                     monsterSubtypes.Add(new SynchroMonster(yugiohWebPageCard.Materials));
                     break;
                 case MonsterSubtype.Xyz:
-                    monsterSubtypes.Add(new XyzMonster(yugiohWebPageCard.Materials));
+                    monsterSubtypes.Add(new XyzMonster(yugiohWebPageCard.Rank.GetValueOrDefault(), yugiohWebPageCard.Materials));
                     break;
                 case MonsterSubtype.Pendulum:
                     monsterSubtypes.Add(new PendulumMonster(yugiohWebPageCard.PendulumScale.GetValueOrDefault(), yugiohWebPageCard.Description));
+                    break;
+                case MonsterSubtype.Tuner:
+                    monsterSubtypes.Add(new TunerMonster());
+                    break;
+                case MonsterSubtype.Gemini:
+                    monsterSubtypes.Add(new GeminiMonster());
+                    break;
+                case MonsterSubtype.Union:
+                    monsterSubtypes.Add(new UnionMonster());
+                    break;
+                case MonsterSubtype.Spirit:
+                    monsterSubtypes.Add(new SpiritMonster());
+                    break;
+                case MonsterSubtype.Flip:
+                    monsterSubtypes.Add(new FlipMonster());
+                    break;
+                case MonsterSubtype.Toon:
+                    monsterSubtypes.Add(new ToonMonster());
+                    break;
+                case MonsterSubtype.Link:
+                    monsterSubtypes.Add(new LinkMonster(yugiohWebPageCard.MonsterLinkArrows));
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(monsterSubtype));
