@@ -1,5 +1,6 @@
 ﻿using CardBlitz.Constants;
 using CardBlitz.Core;
+using CardBlitz.Models.Monster;
 
 namespace CardBlitz.Models;
 
