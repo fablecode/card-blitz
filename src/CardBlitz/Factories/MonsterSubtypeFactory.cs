@@ -34,7 +34,7 @@ public static class MonsterSubtypeFactory
                     monsterSubtypes.Add(new XyzMonster(yugiohWebPageCard.Materials));
                     break;
                 case MonsterSubtype.Pendulum:
-                    monsterSubtypes.Add(new PendulumMonster(yugiohWebPageCard.PendulumScale.GetValueOrDefault(), yugiohWebPageCard.PendulumEffect));
+                    monsterSubtypes.Add(new PendulumMonster(yugiohWebPageCard.PendulumScale.GetValueOrDefault(), yugiohWebPageCard.Description));
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(monsterSubtype));
