@@ -17,7 +17,7 @@ public sealed class YugiohWebPageCard
     public string Property { get; set; }
     public string Description { get; set; }
     public string ImageUrl { get; set; }
-    public string LinkArrows { get; set; }
+    public string? LinkArrows { get; set; }
 
 
     public string[] MonsterSubCategoriesAndTypes
@@ -32,7 +32,7 @@ public sealed class YugiohWebPageCard
     {
         get
         {
-            return LinkArrows.Split(',').Select(t => t.Trim()).ToArray();
+            return LinkArrows == null ? [] : LinkArrows.Split(',').Select(t => t.Trim()).ToArray();
         }
     }
 }

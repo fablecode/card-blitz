@@ -15,15 +15,19 @@ public static class CardTypeFactory
         {
             case CardType.Monster:
                 var monsterAttribute = MonsterAttributeFactory.CreateMonsterAttribute(yugiohWebPageCard.Attribute);
+                var monsterHierarchy = MonsterHierarchyFactory.CreateMonsterHierarchy(yugiohWebPageCard.Level.GetValueOrDefault(), yugiohWebPageCard.Rank.GetValueOrDefault(), yugiohWebPageCard.MonsterLinkArrows.Length);
                 var monsterType = MonsterTypeFactory.CreateMonsterType(yugiohWebPageCard.MonsterSubCategoriesAndTypes);
                 var monsterSubtypes = MonsterSubtypeFactory.CreateMonsterSubtypes(yugiohWebPageCard);
+                var monsterStats = MonsterStatsFactory.CreateMonsterStats(yugiohWebPageCard);
 
                 return new MonsterCard
                 (
                     yugiohWebPageCard.Name,
+                    monsterHierarchy,
                     monsterAttribute,
                     monsterType,
-                    monsterSubtypes
+                    monsterSubtypes,
+                    monsterStats
                 );
             case CardType.Spell:
                 return new SpellCard(yugiohWebPageCard.Name, SpellTypeFactory.CreateSpellType(yugiohWebPageCard.CardType));
