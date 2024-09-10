@@ -4,14 +4,14 @@ namespace CardBlitz.Domain.Monster;
 
 public sealed class MonsterCard : ICardType
 {
-    public MonsterCard(string name, IMonsterHierarchy hierarchy, MonsterAttribute attribute, MonsterType type, IEnumerable<IMonsterSubtype> subTypes, IMonsterStat monsterStat)
+    public MonsterCard(string name, IMonsterHierarchy hierarchy, MonsterAttribute attribute, MonsterType type, IEnumerable<IMonsterSubtype> subTypes, IMonsterStat monsterStats)
     {
         Name = name;
         Hierarchy = hierarchy;
         Attribute = attribute;
         Type = type;
         SubTypes = subTypes;
-        MonsterStat = monsterStat;
+        MonsterStats = monsterStats;
     }
 
     public string Name { get; }
@@ -19,5 +19,5 @@ public sealed class MonsterCard : ICardType
     public MonsterAttribute Attribute { get; }
     public MonsterType Type { get; }
     public IEnumerable<IMonsterSubtype> SubTypes { get; }
-    public IMonsterStat MonsterStat { get; }
+    public IMonsterStat MonsterStats { get; }
 }
