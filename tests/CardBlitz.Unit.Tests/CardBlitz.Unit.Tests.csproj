@@ -20,10 +20,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="FactoriesTests\" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <ProjectReference Include="..\..\src\CardBlitz\CardBlitz.csproj" />
 	</ItemGroup>
 
