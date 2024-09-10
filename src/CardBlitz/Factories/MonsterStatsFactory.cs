@@ -1,6 +1,7 @@
 ﻿using CardBlitz.Core;
 using CardBlitz.Domain;
 using CardBlitz.Domain.Monster;
+using CardBlitz.WebPages;
 
 namespace CardBlitz.Factories;
 

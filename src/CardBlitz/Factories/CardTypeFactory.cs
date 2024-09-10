@@ -4,6 +4,7 @@ using CardBlitz.Domain;
 using CardBlitz.Domain.Monster;
 using CardBlitz.Domain.Spell;
 using CardBlitz.Domain.Trap;
+using CardBlitz.WebPages;
 
 namespace CardBlitz.Factories;
 

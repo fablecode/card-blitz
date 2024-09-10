@@ -1,4 +1,5 @@
 ﻿using CardBlitz.Domain;
+using CardBlitz.WebPages;
 
 namespace CardBlitz.Factories;
 

@@ -1,4 +1,4 @@
-﻿namespace CardBlitz.Domain;
+﻿namespace CardBlitz.WebPages;
 
 public sealed class YugiohWebPageCard
 {

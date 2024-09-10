@@ -1,6 +1,7 @@
 ﻿using CardBlitz.Domain;
 using CardBlitz.Domain.Monster;
 using CardBlitz.Factories;
+using CardBlitz.WebPages;
 using FluentAssertions;
 using NUnit.Framework;
 
