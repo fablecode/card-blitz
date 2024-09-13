@@ -1,9 +1,8 @@
-﻿using System.Collections.Immutable;
-using CardBlitz.Constants;
+﻿using CardBlitz.Constants;
 using CardBlitz.Core;
-using CardBlitz.Domain;
 using CardBlitz.Domain.Monster;
 using CardBlitz.WebPages;
+using System.Collections.Immutable;
 
 namespace CardBlitz.Factories;
 
@@ -13,7 +12,7 @@ public static class MonsterSubtypeFactory
     {
         var monsterSubtypes = new List<IMonsterSubtype>();
 
-        foreach (var monsterSubtype in yugiohWebPageCard.MonsterSubCategoriesAndTypes.Skip(1))
+        foreach (var monsterSubtype in GetMonsterSubtypes(yugiohWebPageCard.MonsterSubCategoriesAndTypes))
         {
             switch (monsterSubtype)
             {
@@ -65,5 +64,10 @@ public static class MonsterSubtypeFactory
         }
 
         return monsterSubtypes.ToImmutableArray();
+    }
+
+    public static IEnumerable<string> GetMonsterSubtypes(string[] monsterSubCategoriesAndTypes)
+    {
+        return monsterSubCategoriesAndTypes.Skip(1);
     }
 }
