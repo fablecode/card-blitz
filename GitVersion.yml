@@ -1,0 +1,32 @@
+branches:
+  main:
+    label: ''
+    increment: Patch
+    track-merge-target: true
+  feature:
+    label: 'alpha'
+    increment: Inherit
+  hotfix:
+    label: 'beta'
+    increment: Patch
+  refactor:
+    regex: ^refactor[/-]
+    label: 'alpha'
+    increment: Minor
+  chore:
+    regex: ^chore[/-]
+    label: 'beta'
+    increment: Patch
+  doc:
+    regex: ^doc[/-]
+    label: 'beta'
+    increment: Patch
+
+ignore:
+  sha: []
+
+commit-message-incrementing: Enabled
+tag-prefix: '[vV]'
+assembly-versioning-scheme: MajorMinorPatch
+assembly-file-versioning-format: '{Major}.{Minor}.{Patch}.{WeightedPreReleaseNumber}'
+assembly-informational-format: '{FullSemVer} Branch: {BranchName} Sha: {Sha}'
