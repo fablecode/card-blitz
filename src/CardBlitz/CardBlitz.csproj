@@ -4,7 +4,26 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
+
+	<PropertyGroup>
+		<Authors>Fablecode</Authors>
+		<Description>Card Blitz is your go-to tool for gathering comprehensive and up-to-date Yu-Gi-Oh! card information from multiple sources. Perfect for duelists, developers, and fans who want easy access to card data, types, and attributes, all within a single package.</Description>
+		<Title>CardBlitz</Title>
+		<Copyright>Copyright Fablecode</Copyright>
+		<PackageTags>
+			Yu-Gi-Oh!; Card Game; Card Data; Data Retrieval; .NET; API; C#; Deck Building; Trading Card Game; Game Development; Developer Tools; Duelists; Monster Types; Spell Cards; Trap Cards; Card Collection; Open Source; Card Game Tools; Data Analysis; Strategy Pattern
+		</PackageTags>
+		<PackageIcon>logo_128x128.png</PackageIcon>
+		<RepositoryUrl>https://github.com/fablecode/cardblitz</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\assets\logo\logo_128x128.png" Pack="true" PackagePath="" />
+	</ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="HtmlAgilityPack" Version="1.11.65" />
