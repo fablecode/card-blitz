@@ -23,6 +23,8 @@ public class WikiDataSource : ICardDataSource
 
     public ICard CardByPasscode(long passcode)
     {
-        throw new NotImplementedException();
+        var yugiohWebPageCard = _cardWebPage.GetYugiohCard(new Uri(Url, $"wiki/{passcode}"));
+
+        return CardFactory.FromYugiohWebPageCard(yugiohWebPageCard);
     }
 }
