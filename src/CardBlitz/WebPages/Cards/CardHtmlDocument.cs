@@ -16,7 +16,7 @@ public class CardHtmlDocument : ICardHtmlDocument
 
     public string ImageUrl(HtmlDocument htmlDocument)
     {
-        var imageUrl = htmlDocument.DocumentNode.SelectSingleNode("//td[@class='cardtable-cardimage']/a/img")?.Attributes["src"]?.Value;
+        var imageUrl = htmlDocument.DocumentNode.SelectSingleNode("//td[@class='cardtable-cardimage']//a/img").Attributes["src"].Value;
 
         return ImageHelper.ExtractImageUrl(imageUrl);
     }
