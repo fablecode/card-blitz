@@ -1,6 +1,6 @@
 [![NuGet](https://img.shields.io/nuget/v/CardBlitz)](https://www.nuget.org/packages/CardBlitz)
-[![License](https://img.shields.io/github/license/yourusername/card-blitz)](LICENSE)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/yourusername/card-blitz/build.yml)](https://github.com/yourusername/card-blitz/actions)
+[![License](https://img.shields.io/github/license/fablecode/card-blitz)](LICENSE)
+[![Build Status](https://dev.azure.com/fablecode/Yugioh/_apis/build/status%2Ffablecode.card-blitz?branchName=main)](https://dev.azure.com/fablecode/Yugioh/_build/latest?definitionId=22&branchName=main)
 
 # 🎴 Card Blitz
 
