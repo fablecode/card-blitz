@@ -1,3 +1,4 @@
+mode: ContinuousDeployment
 branches:
   main:
     label: ''
@@ -5,14 +6,14 @@ branches:
     track-merge-target: true
   feature:
     label: 'alpha'
-    increment: Inherit
+    increment: Minor
   hotfix:
     label: 'beta'
     increment: Patch
   refactor:
     regex: ^refactor[/-]
     label: 'alpha'
-    increment: Minor
+    increment: Patch
   chore:
     regex: ^chore[/-]
     label: 'beta'
